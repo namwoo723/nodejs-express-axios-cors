@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
   fetchButton.addEventListener('click', async () => {
     try {
       const response = await axios.get(BASE_URL);
-      const data = response.data;
+      const data = response.data
       messageDisplay.textContent = data.message || '메시지가 없습니다';
     } catch (error) {
       console.error('메시지 가져오기 오류:', error);
